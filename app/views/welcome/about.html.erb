@@ -2,6 +2,13 @@
 <p>Lots of interesting stuffs.</p>
 <p>My favorite color is <%= @color %></p>
 
+<style>
+  body {
+    background: <%= @color %>;
+  }
+</style>
+
+
 <% if @size > 12 %>
 
 	<p>I wear size <%= @size %></p>
@@ -10,3 +17,15 @@
 <%else%>
 	<p>I wear size <%= @size %></p>
 <% end %>  
+
+
+<%= link_to "Blue", about_path(color: "blue"), class: "btn btn-primary" %>
+<%= link_to "Red", about_path(color: "red"), class: "btn btn-danger" %>
+<%= link_to "Yellow", about_path(color: "yellow"), class: "btn btn-success" %>
+<%= link_to "Orange", about_path(color: "orange"), class: "btn btn-primary" %>
+<br/><br/>
+
+<%= link_to "15", about_path(size: "15"), class: "btn btn-primary" %>
+<%= link_to "10", about_path(size: "10"), class: "btn btn-primary" %>
+<%= link_to "4", about_path(size: "4"), class: "btn btn-primary" %>
+
