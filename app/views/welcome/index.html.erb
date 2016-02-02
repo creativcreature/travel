@@ -1,0 +1,27 @@
+<h1>WELCOME TO THE TRAVEL PAGE OF YOUR DREAMS!!</h1>
+<p>Find me in <%= @homeland %></p>
+
+<ol>
+	<% @countries.each do |country| %>
+  		<li><%= country %></li>
+	<% end %>
+</ol>
+
+
+<style>
+  body {
+    background: <%= @color %>;
+  }
+</style>
+
+<% @images.each do |image_name| %>
+
+	<%= image_tag image_name ,height: 300, width: 400 %>
+
+<% end %>  
+
+<% @images.each do |image_name| %>
+
+	<%= image_tag image_name ,:height => "10%", :width => "10%" %>
+
+<% end %>  
