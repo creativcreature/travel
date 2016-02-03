@@ -14,14 +14,14 @@
   }
 </style>
 
+<% @images.shuffle!%>
+
 <% @images.each do |image_name| %>
-
 	<%= image_tag image_name ,height: 300, width: 400 %>
-
 <% end %>  
 
-<% @images.each do |image_name| %>
+<!--<% @images.each do |image_name| %>
 
 	<%= image_tag image_name ,:height => "10%", :width => "10%" %>
 
-<% end %>  
+<% end %>  -->

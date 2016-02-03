@@ -1,3 +1,14 @@
-<h1>Howdy Howdy you Bout it Bout it?</h1>
-<p>Lots of interesting stuffs.</p>
+<style>
+  .fontbaby {
+    color: <%= @color %>;
+  }
+</style>
+<h1 class="fontbaby">This is a contact page</h1>
+<p>Hit me up chrisparker@shutyoface.org</p>
 
+
+
+<%= link_to "Blue", contact_path(color: "blue"), class: "btn btn-primary" %>
+<%= link_to "Red", contact_path(color: "red"), class: "btn btn-danger" %>
+<%= link_to "Yellow", contact_path(color: "yellow"), class: "btn btn-success" %>
+<%= link_to "Orange", contact_path(color: "orange"), class: "btn btn-primary" %>
